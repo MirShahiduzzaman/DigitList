@@ -19,11 +19,16 @@ public class Digits
     {
         for(int i =1;i<digitList.size();i++)
         {
-            if(digitList.get(i)<digitList.get(i-1))
+            if(digitList.get(i)<=digitList.get(i-1))
             {
                 return false;
             }
         }
         return true;
+    }
+
+    public ArrayList<Integer> getDigitList()
+    {
+        return digitList;
     }
 }
